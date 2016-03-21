@@ -1,0 +1,34 @@
+
+****************************************
+Report : resources
+Design : SinBlock
+Version: I-2013.12-SP1
+Date   : Sun Mar 20 23:31:17 2016
+****************************************
+
+Resource Sharing Report for design SinBlock in file
+        /DCNFS/users/student/psharma/AWGN/SinCos/SinBlock.sv
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r58      | DW01_add     | width=15   |               | add_29               |
+| r160     | DW02_mult    | A_width=12 |               | mult_25              |
+|          |              | B_width=14 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_25            | DW02_mult        | csa                |                |
+===============================================================================
+
+
+No multiplexors to report
+Writing verilog file '/DCNFS/users/student/psharma/AWGN/SinCos/SIN_NETLIST.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+

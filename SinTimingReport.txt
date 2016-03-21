@@ -1,0 +1,81 @@
+****************************************     
+Report : timing                              
+        -path full                           
+        -delay max                           
+        -max_paths 1                         
+Design : SinBlock                            
+Version: I-2013.12-SP1                       
+Date   : Sun Mar 20 23:29:41 2016            
+****************************************     
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top                       
+
+  Startpoint: x[8] (input port clocked by clk)
+  Endpoint: Term1_reg[25]                     
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk                                           
+  Path Type: max                                            
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00   
+  clock network delay (ideal)                             0.00       0.00   
+  input external delay                                    0.00       0.00 r 
+  x[8] (in)                                               0.00       0.00 r 
+  U2228/Z (IVA)                                           0.54       0.54 f 
+  U2059/Z (IVP)                                           0.59       1.13 r 
+  U2211/Z (IVA)                                           0.66       1.80 f 
+  U1845/Z (IVP)                                           1.80       3.59 r 
+  U1737/Z (EN)                                            0.94       4.53 r 
+  U1735/Z (ND2)                                           0.30       4.83 f 
+  U2142/Z (MUX81P)                                        1.17       6.00 f 
+  U2143/Z (MUX21H)                                        1.27       7.26 f 
+  mult_25/A[1] (SinBlock_DW02_mult_0)                     0.00       7.26 f 
+  mult_25/U30/Z (IVP)                                     1.21       8.47 r 
+  mult_25/U199/Z (NR2)                                    0.43       8.90 f 
+  mult_25/U67/Z (AN2P)                                    0.91       9.81 f 
+  mult_25/S2_2_3/CO (FA1A)                                2.27      12.08 f 
+  mult_25/S2_3_3/CO (FA1A)                                2.27      14.36 f 
+  mult_25/S2_4_3/CO (FA1A)                                2.27      16.63 f 
+  mult_25/S2_5_3/CO (FA1A)                                2.27      18.90 f 
+  mult_25/S2_6_3/CO (FA1A)                                2.27      21.18 f 
+  mult_25/S2_7_3/CO (FA1A)                                2.27      23.45 f 
+  mult_25/S2_8_3/CO (FA1A)                                2.27      25.73 f 
+  mult_25/S2_9_3/CO (FA1A)                                2.27      28.00 f 
+  mult_25/S2_10_3/CO (FA1A)                               2.27      30.27 f 
+  mult_25/S4_3/S (FA1A)                                   2.43      32.70 r 
+  mult_25/U2/Z (EO)                                       1.19      33.89 f 
+  mult_25/FS_1/A[12] (SinBlock_DW01_add_1)                0.00      33.89 f 
+  mult_25/FS_1/U24/Z (NR2)                                1.33      35.22 r 
+  mult_25/FS_1/U26/Z (IVP)                                0.19      35.41 f 
+  mult_25/FS_1/U5/Z (AO6)                                 1.34      36.75 r 
+  mult_25/FS_1/U6/Z (AO7)                                 0.53      37.29 f 
+  mult_25/FS_1/U7/Z (AO6)                                 1.34      38.63 r 
+  mult_25/FS_1/U9/Z (AO7)                                 0.53      39.17 f 
+  mult_25/FS_1/U10/Z (AO6)                                1.34      40.51 r 
+  mult_25/FS_1/U12/Z (AO7)                                0.53      41.04 f 
+  mult_25/FS_1/U13/Z (AO6)                                1.34      42.39 r 
+  mult_25/FS_1/U40/Z (AO7)                                0.53      42.92 f 
+  mult_25/FS_1/U15/Z (AO6)                                1.34      44.26 r 
+  mult_25/FS_1/U31/Z (AO7)                                0.53      44.80 f 
+  mult_25/FS_1/U2/Z (AO6)                                 1.34      46.14 r 
+  mult_25/FS_1/U25/Z (EN)                                 1.13      47.27 f 
+  mult_25/FS_1/SUM[23] (SinBlock_DW01_add_1)              0.00      47.27 f 
+  mult_25/PRODUCT[25] (SinBlock_DW02_mult_0)              0.00      47.27 f 
+  Term1_reg[25]/D (FDS2L)                                 0.00      47.27 f 
+  data arrival time                                                 47.27   
+
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.00      50.00
+  Term1_reg[25]/CP (FDS2L)                                0.00      50.00 r
+  library setup time                                     -1.60      48.40  
+  data required time                                                48.40  
+  --------------------------------------------------------------------------
+  data required time                                                48.40   
+  data arrival time                                                -47.27   
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.13
+
+
+
