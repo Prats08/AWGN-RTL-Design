@@ -1,0 +1,32 @@
+****************************************                                                       
+Report : area                                                                                  
+Design : AWGN                                                                                  
+Version: I-2013.12-SP1                                                                         
+Date   : Mon Mar 21 03:51:19 2016                                                              
+****************************************                                                       
+
+Information: Updating design information... (UID-85)
+Warning: Design 'AWGN' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)                                               
+Library(s) Used:                                                                               
+
+    lsi_10k (File: /opt/synopsys-2013/app/syn/libraries/syn/lsi_10k.db)
+
+Number of ports:                           35
+Number of nets:                          1232
+Number of cells:                          589
+Number of combinational cells:             55
+Number of sequential cells:               526
+Number of macros/black boxes:               0
+Number of buf/inv:                         49
+Number of references:                      16
+
+Combinational area:              88341.000000
+Buf/Inv area:                     3322.000000
+Noncombinational area:           12614.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                100955.000000
+Total area:                 undefined        
+                                             
+

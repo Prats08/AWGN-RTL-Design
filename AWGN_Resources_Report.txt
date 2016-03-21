@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : resources                      
+Design : AWGN                           
+Version: I-2013.12-SP1
+Date   : Mon Mar 21 00:28:07 2016
+****************************************
+
+Resource Sharing Report for design AWGN in file
+        /DCNFS/users/student/psharma/AWGN/Polyfit/AWGN.sv
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r165     | DW02_mult    | A_width=15 |               | mult_43              |
+|          |              | B_width=17 |               |                      |
+| r167     | DW02_mult    | A_width=15 |               | mult_44              |
+|          |              | B_width=17 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_44            | DW02_mult        | csa                |                |
+| mult_43            | DW02_mult        | csa                |                |
+===============================================================================
+
+

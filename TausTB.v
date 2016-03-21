@@ -9,11 +9,11 @@ initial begin
 	clk = 0;
 	reset = 1;
 
-	#50;
+	#60;
 
 	reset = 0;
 
-	#500;
+	#1000;
 
 	$finish;
 end

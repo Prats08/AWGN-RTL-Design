@@ -4,15 +4,16 @@ clean:
 	\rm -rf simv* csrc
 
 run: clean
-	vcs Toplevel.v Taus.v LOG_POLY.sv SQRT_POLY.sv SinBlock.v TausTB.v +v2k -sverilog -debug_all -timescale=1ns/1ps 
+	vcs Toplevel.v Taus.v LOG_POLY.sv SQRT_POLY.sv SinBlock.sv TausTB.v +v2k -sverilog -debug_all -timescale=1ns/1ps 
 	./simv -gui&
+	dc_shell-t
 
-lzd: clean
-	vcs LZD.v LZDTB.v +v2k -debug_all -timescale=1ns/1ps 
-	./simv
-
-sincos: clean
-	vcs SinBlock.v SinTB.v +v2k -sverilog -debug_all -timescale=1ns/1ps 
+AWGN: clean
+	vcs AWGN.sv TausTB.v +v2k -sverilog -debug_all -timescale=1ns/1ps 
 	./simv -gui&
+	dc_shell-t
 
+netlist: clean
+	vcs AWGN_NETLIST.v TausTB.v lsi_10k.v +v2k -sverilog -debug_all -timescale=1ns/1ps 
+	./simv -gui&
 
